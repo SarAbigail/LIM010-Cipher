@@ -11,120 +11,128 @@
   <header>
     
   </header>
-  <main> 
-    <div id="screen1" class="hide">
-      <form class="">
-        <h1>Super Fan</h1>
-        <p id="msg-1">Ingresa tu clave secreta</p>
-        <input type="password" placeholder=" Su clave AQUÍ" id="password" required>
-        <!--<input type="submit" name="Enviar" id="sent" value="ENVIAR">-->
-        <!--<input type="button" name="Enviar" id="sent" value="ENVIAR">-->
-        <button type="button" id="sent" class="boton">Enviar</button>
-        <h4 id="error"></h4>
-      </form>
-    </div>
-    <div id="screen2" class="hide">
-      <h1 id="bienvenida">.</h1>
-      <h4 id="instruccion"></h4>
-      <p>
-        <button type="button" id="cipher" class="buttoncd">Cifrar</button>
-        <button type="button" id="decipher" class="buttoncd" >Descifrar</button>
-      </p>
-    </div>
-    <div id="screen3" class="hide">
-      <form>
-        <div class="centrar">
-          <h2>Escribe el texto a CIFRAR</h2>
-          <textarea name="msg"  id="inputCipher" required></textarea>
-          <select id="cOffset" class="offset">
-            <option >Clave :</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-          </select>
-        </div>
-        <input type="button" value="Cifrar" id="sentCipher" class="boton">
-        <div class="centrar">
-          <h2>Resultado</h2>
-          <textarea name="msg" placeholder="" id="outputCipher" readonly="readonly"></textarea>
-          <input type="button" value="Copiar" id="copyCipher" class="copy">  
-        </div>
+  <main>
+    <section>
+      <div id="screen1" class="hide">
+        <form class="">
+          <h1>Super Fan</h1>
+          <p id="msg-1">Ingresa tu clave secreta</p>
+          <input type="password" placeholder=" Su clave AQUÍ" id="password" required>
+          <!--<input type="submit" name="Enviar" id="sent" value="ENVIAR">-->
+          <!--<input type="button" name="Enviar" id="sent" value="ENVIAR">-->
+          <button type="button" id="sent" class="boton">Enviar</button>
+          <h4 id="error"></h4>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div id="screen2" class="hide">
+        <h1 id="bienvenida">.</h1>
+        <h4 id="instruccion"></h4>
         <p>
-          <input type="reset" value="Limpiar">
-          <button type="button" id="backC" class="back">Atrás</button>
+          <button type="button" id="cipher" class="buttoncd">Cifrar</button>
+          <button type="button" id="decipher" class="buttoncd" >Descifrar</button>
         </p>
-      </form>
-    </div>
-    <div id="screen4" class="hide">
-      <form>
-        <div class="centrar">
-          <h2>Escribe el texto a DESCIFRAR</h2>
-          <textarea name="msg" placeholder="" id="inputDecipher" class="" required></textarea>
-          <select  class="offset" id="dOffset">
-            <option >Clave:</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
-            <option value="21">21</option>
-            <option value="22">22</option>
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-          </select>
-        </div>
-        <input type="button" value="Descifrar" id="sentDecipher" class="boton">
-        <div class="centrar">
-          <h2>Resultado</h2>
-          <textarea name="msg" placeholder="" id="outputDecipher" class="" readonly="readonly"></textarea>
-          <input type="button" value="Copiar" id="copyDecipher" class="copy">
-        </div>
-        <p>
-          <input type="reset" value="Limpiar">
-          <button id="backD" class="back">Atrás</button>
-        </p>
-      </form>
-    </div>
+      </div>
+    </section>
+    <section>
+      <div id="screen3" class="hide">
+        <form>
+          <div class="centrar">
+            <h2>Escribe el texto a CIFRAR</h2>
+            <textarea name="msg"  id="inputCipher" required></textarea>
+            <select id="cOffset" class="offset">
+              <option >Clave :</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+            </select>
+          </div>
+          <input type="button" value="Cifrar" id="sentCipher" class="boton">
+          <div class="centrar">
+            <h2>Resultado</h2>
+            <textarea name="msg" placeholder="" id="outputCipher" readonly="readonly"></textarea>
+            <input type="button" value="Copiar" id="copyCipher" class="copy">  
+          </div>
+          <p>
+            <input type="reset" value="Limpiar">
+            <button type="button" id="backC" class="back">Atrás</button>
+          </p>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div id="screen4" class="hide">
+        <form>
+          <div class="centrar">
+            <h2>Escribe el texto a DESCIFRAR</h2>
+            <textarea name="msg" placeholder="" id="inputDecipher" class="" required></textarea>
+            <select  class="offset" id="dOffset">
+              <option >Clave:</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+            </select>
+          </div>
+          <input type="button" value="Descifrar" id="sentDecipher" class="boton">
+          <div class="centrar">
+            <h2>Resultado</h2>
+            <textarea name="msg" placeholder="" id="outputDecipher" class="" readonly="readonly"></textarea>
+            <input type="button" value="Copiar" id="copyDecipher" class="copy">
+          </div>
+          <p>
+            <input type="reset" value="Limpiar">
+            <button id="backD" class="back">Atrás</button>
+          </p>
+        </form>
+      </div>
+    </section>
   </main>
   <footer>
     © 2019 Todos los derechos reservados SarAbigail
