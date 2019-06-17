@@ -31,11 +31,11 @@ window.cipher = {
           let toAscii=stringD.charCodeAt(i);
           //Para las mayúsculas
           if (toAscii>=65&&toAscii<=90){
-            textCharD=(toAscii-13-parseInt(offsetD))%26+65;
+            textCharD=(toAscii-90-parseInt(offsetD)+26)%26+90;
             newtxtD+=String.fromCharCode(textCharD);
             //Para las minúsculas
           }else if (toAscii>=97&&toAscii<=122) {
-            textCharD=(toAscii-45-parseInt(offsetD)+26)%26+97;
+            textCharD=(toAscii-122-parseInt(offsetD)+26)%26+122;
             newtxtD+=String.fromCharCode(textCharD);
           }
         }else{

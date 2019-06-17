@@ -1,8 +1,8 @@
 /*APLICADO AL HTML*/
 html {
-  min-height: 100%;
-  position: relative;
-  font-family:'Nunito', sans-serif;
+	min-height: 100%;
+	position: relative;
+	font-family:'Nunito', sans-serif;
 }
 /*APLICADO A TODO EL MAIN*/
 main{
@@ -10,7 +10,7 @@ main{
 }
 /*PARA OCULTAR LAS VISTAS*/
 .hide {
-    display: none;
+	display: none;
 }
 /* APLICADO A TODOS LOS H1*/
 h1{
@@ -44,9 +44,9 @@ footer{
 	font-weight:900;
 	text-align:center;
 	position: absolute;
-    bottom:0;
-    width: 99%;
-    height:3em;
+	bottom:0;
+	width: 99%;
+	height:3em;
 }
 /*APLICADO A LOS PARRAFO*/
 p{
