@@ -22,7 +22,7 @@ window.cipher = {
         }else if(toAscii>=97 && toAscii<=122){
           //A textCharC se le asigna el resultado obtenido despues de aplicarse la fórmula de cifrado para minúsculas.
           textCharC=(toAscii-97+parseInt(offsetC))%26+97;
-          //Construye una cadea a partir del resultado en numero ascii.
+          //Construye una cadena a partir del resultado en numero ascii.
           newtxtC+=String.fromCharCode(textCharC);
         }
       }else{
